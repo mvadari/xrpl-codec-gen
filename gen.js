@@ -53,6 +53,8 @@ const translate = (inp)=>{
                     inp += parts[x].substr(0,3).toUpperCase();
                 else if (parts[x] == 'NFTOKEN')
                     inp += parts[x].substr(0,3).toUpperCase() + parts[x].substr(3).toLowerCase();
+                else if (parts[x] == 'XCHAIN')
+                    inp += parts[x].substr(0,2).toUpperCase() + parts[x].substr(2).toLowerCase();
                 else
                     inp += parts[x].substr(0,1).toUpperCase() + parts[x].substr(1).toLowerCase();
             return inp;
@@ -273,6 +275,8 @@ const ttranslate = (inp)=>{
                     inp += parts[x].substr(0,3).toUpperCase();
                 else if (parts[x] == 'NFTOKEN')
                     inp += parts[x].substr(0,3).toUpperCase() + parts[x].substr(3).toLowerCase();
+                else if (parts[x] == 'XCHAIN')
+                    inp += parts[x].substr(0,2).toUpperCase() + parts[x].substr(2).toLowerCase();
                 else
                     inp += parts[x].substr(0,1).toUpperCase() + parts[x].substr(1).toLowerCase();
             }
